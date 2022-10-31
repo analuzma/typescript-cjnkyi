@@ -1,77 +1,110 @@
-<h1>MTech Front End Jr Test</h1>
-<hr />
-<h3>General Instructions</h3>
-<p>
-  The test should be on this same platform (<a href="https://stackblitz.com/"
-    >stackblitz</a
-  >) so you
-  <b>have to fork this repo</b>
-</p>
-<h3>Question 1</h3>
-<p>
-  Make the text within the button display the number of times the button has
-  been clicked.
-</p>
-<div class="work-area align-center">
-  <button id="question-one">Clicks: 0</button>
-</div>
-<h3>Question 2</h3>
-<p>
-  Implement a click function to get all DOM elements using the "even-p" class
-  and remove the class from them when clicking on the "Remove Class" button.
-</p>
-<div class="work-area">
-  <button id="question-two" class="center-button">Remove Class</button>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-  <div class="even-p"></div>
-  <div class="odd-p"></div>
-</div>
-<h3>Question 3</h3>
-<p>
-  Import the Farms array from the "data.ts" document, print each farm name
-  inside a "li" element inside the farm list ul, and filter the list when
-  selecting an option from the select element. The "All" option should display
-  all the farms.
-</p>
-<div class="work-area no-flex padding">
-  <select name="farm-stage" id="question-three">
-    <option value="All">All</option>
-    <option value="Brood">Brood</option>
-    <option value="Grow">Grow</option>
-    <option value="Lay">Lay</option>
-    <option value="Mixed">Mixed</option>
-  </select>
-  <ul id="farms-list">
-    <li>Farms list starts here</li>
-  </ul>
-</div>
-<h3>Question 4</h3>
-<p>
-  Create a function called "myPromise," which must return a promise and resolve
-  itself 3 seconds after pressing the button "Run Promise". Print "Hello World!"
-  in the paragraph asynchronously after "myPromise" resolves.
-</p>
-<div class="work-area no-flex padding">
-  <button id="question-four">Run Promise</button>
-  <p id="question-four-p">Print the result here</p>
-</div>
-<h3>Question 5</h3>
-<p>Recreate the following card component in CSS:</p>
-<div class="component"></div>
-<p>Measurements:</p>
-<p>You can use any iconography for the house icon.</p>
-<p>Make sure to write all the styles in the card-component.css file.</p>
-<div class="measurements"></div>
-<div class="work-area align-center">Card component goes here</div>
+<html>
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira Sans"
+      rel="stylesheet"
+    />
+  <body>
+    <h1>MTech Front End Jr Test</h1>
+    <hr />
+    <h3>General Instructions</h3>
+    <p>
+      The test should be on this same platform (<a
+        href="https://stackblitz.com/"
+        >stackblitz</a
+      >) so you
+      <b>have to fork this repo</b>
+    </p>
+    <h3>Question 1</h3>
+    <p>
+      Make the text within the button display the number of times the button has
+      been clicked.
+    </p>
+    <div class="work-area align-center">
+      <button id="question-one">
+        Clicks:
+        <p id="click-counter"></p>
+      </button>
+    </div>
+    <h3>Question 2</h3>
+    <p>
+      Implement a click function to get all DOM elements using the "even-p"
+      class and remove the class from them when clicking on the "Remove Class"
+      button.
+    </p>
+    <div class="work-area">
+      <button id="question-two" class="center-button">Remove Class</button>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+      <div class="even-p"></div>
+      <div class="odd-p"></div>
+    </div>
+    <h3>Question 3</h3>
+    <p>
+      Import the Farms array from the "data.ts" document, print each farm name
+      inside a "li" element inside the farm list ul, and filter the list when
+      selecting an option from the select element. The "All" option should
+      display all the farms.
+    </p>
+    <div class="work-area no-flex padding">
+      <select name="farm-stage" id="question-three">
+        <option value="All">All</option>
+        <option value="Brood">Brood</option>
+        <option value="Grow">Grow</option>
+        <option value="Lay">Lay</option>
+        <option value="Mixed">Mixed</option>
+      </select>
+      <ul id="farms-list">
+        <li>Farms list starts here</li>
+      </ul>
+    </div>
+    <h3>Question 4</h3>
+    <p>
+      Create a function called "myPromise," which must return a promise and
+      resolve itself 3 seconds after pressing the button "Run Promise". Print
+      "Hello World!" in the paragraph asynchronously after "myPromise" resolves.
+    </p>
+    <div class="work-area no-flex padding">
+      <button id="question-four">Run Promise</button>
+      <p id="question-four-p">Print the result here</p>
+    </div>
+    <h3>Question 5</h3>
+    <p>Recreate the following card component in CSS:</p>
+    <div class="component"></div>
+    <p>Measurements:</p>
+    <p>You can use any iconography for the house icon.</p>
+    <p>Make sure to write all the styles in the card-component.css file.</p>
+    <div class="measurements"></div>
+    <div class="work-area align-center">
+      <div class="container">
+        <div class="card-container">
+          <div class="card-upper">
+            <h3>🏠 Field Transactions</h3>
+          </div>
+          <div class="card-bottom">
+            <div class="left-data">
+              <p>Current Inventory</p>
+              <span>32.47k</span>
+            </div>
+            <div class="right-data">
+              <p>Last Trans Date</p>
+              <span>10/20/2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="index.ts"></script>
+  </body>
+</html>
