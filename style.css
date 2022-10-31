@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,400,500');
+@import 'images';
+
+:root {
+  --hx-prim-900: #0a1232;
+  --hx-prim-800: #111a4b;
+  --hx-prim-700: #162364;
+  --hx-prim-600: #1d2f86;
+  --hx-prim-500: #2d52c7;
+  --hx-prim-400: #397bea;
+  --hx-prim-300: #7eaaed;
+  --hx-prim-200: #c8d6ef;
+  --hx-prim-100: #eff2fa;
+  --hx-prim-50: #f4f8fc;
+}
+
+body {
+  font-family: 'Fira Sans';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.work-area {
+  background-color: var(--hx-prim-900);
+  color: white;
+  display: flex;
+  min-height: 200px;
+  width: 100%;
+  flex-wrap: wrap;
+  border-radius: 4px;
+  position: relative;
+}
+
+.center-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.align-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.no-flex {
+  display: block;
+}
+
+.padding {
+  padding: 16px;
+}
+
+.odd-p,
+.even-p {
+  width: 33.33%;
+  height: 40px;
+}
+
+.even-p {
+  background-color: var(--hx-prim-200);
+}
+
+@import 'card-component';
